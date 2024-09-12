@@ -1,241 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrightBlog</title>
+    <title>My eCommerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header id="main-header">
-        <h1 id="logo"> BrightBlog </h1>
+    <header>
+        <h1>My eCommerce Store</h1>
+        <div class="basket-button">
+            <a href="basket.html"> <img src="https://media.istockphoto.com/id/1128229893/vector/shopping-cart-icon.jpg?s=612x612&w=0&k=20&c=EunmrZqRD5SXHNtqUBNkDl0zJGgq7QUjw2KXlbR6_Dg=" alt="Basket Icon">Basket</a>
+        </div>
         <nav>
-            <ul id="nav-ul">
-                <li><a href="/home" class="navbutton">Home</a></li>
-                <li><a href="/about" class="navbutton">About</a></li>
-                <li><a href="/contact" class="navbutton">Contact</a></li>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div id="main-content">
-            <aside>
-                <section>
-                    <h4>Filter by Month</h4>
-                    <nav>
-                        <ul>
-                            <li><a href="/blog/month/january">January</a></li>
-                            <li><a href="/blog/month/february">February</a></li>
-                            <li><a href="/blog/month/march">March</a></li>
-                        </ul>
-                    </nav>
-                </section>
-                <section>
-                    <h4>Filter by Category</h4>
-                    <nav>
-                        <ul>
-                            <li><a href="/blog/puppies">Puppies!</a></li>
-                            <li><a href="/blog/dogs">Dogs</a></li>
-                            <li><a href="/blog/morepuppues">More Puppies!</a></li>
-                            <li><a href="/blog/cats">Cats</a></li>
-                        </ul>
-                    </nav>
-                </section>
-            </aside>
-            <div>
-                <article>
-                    <header>
-                         <!-- Articles header will go here -->
-                        <h2>Ten Facts about Dogs</h2>
-                        <h3>Read Time: 5 Minutes</h3>
-                    </header>
-                    <main>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Praesentium natus facilis dignissimos eligendi velit sunt nisi vel 
-                            dolores sed at aperiam, pariatur provident doloribus dolor perspiciatis 
-                            saepe totam nihil eum odit, tempora sapiente dolorum rerum. Dicta veniam 
-                            repudiandae dolore aspernatur animi quos rerum. Odio sunt magnam blanditiis 
-                            repudiandae architecto doloremque explicabo inventore earum sit, quibusdam, 
-                            voluptates, modi dicta perferendis illum? Laudantium est expedita sapiente 
-                            dolorem placeat, suscipit ducimus eligendi beatae. Quibusdam ullam ipsam 
-                            suscipit? Rem unde molestias ipsum facere magnam amet saepe dignissimos 
-                            vitae eum minus qui mollitia corrupti nesciunt ut reprehenderit voluptatum 
-                            doloribus velit maxime ratione, dolore aut hic.
-                        </p>
-                        <blockquote cite="https://www.brightnetwork.co.uk/">
-                            "Puppies." - <cite>Zsolt, 2024</cite>
-                        </blockquote>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquid fuga sed, 
-                            voluptate quod sapiente aliquam voluptatibus, fugit ab unde ipsa delectus, 
-                            eum optio reprehenderit odio? Nihil reprehenderit saepe provident voluptates 
-                            cupiditate! Error soluta ad illum, nam illo quasi veniam nobis! Ab assumenda 
-                            maiores necessitatibus consequuntur, saepe a praesentium numquam.
-                        </p>
-                                
-                    </main>
-                    <footer>
-                        <hgroup>
-                        <h2>Author: A. Dog Jr.</h2>
-                        <img src="https://placebear.com/100/100" alt="" srcset="">
-                        <h3>Last posted: 2024-08-01</h3>
-                        <a href="https://www.brightnetwork.co.uk/" target="_blank">https://www.brightnetwork.co.uk</a>
-                        </hgroup>
-                    </footer>
-                </article>
-                <article>
-                    <header>
-                         <!-- Articles header will go here -->
-                        <h2>Ten Facts about Dogs</h2>
-                        <h3>Read Time: 5 Minutes</h3>
-                    </header>
-                    <main>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Praesentium natus facilis dignissimos eligendi velit sunt nisi vel 
-                            dolores sed at aperiam, pariatur provident doloribus dolor perspiciatis 
-                            saepe totam nihil eum odit, tempora sapiente dolorum rerum. Dicta veniam 
-                            repudiandae dolore aspernatur animi quos rerum. Odio sunt magnam blanditiis 
-                            repudiandae architecto doloremque explicabo inventore earum sit, quibusdam, 
-                            voluptates, modi dicta perferendis illum? Laudantium est expedita sapiente 
-                            dolorem placeat, suscipit ducimus eligendi beatae. Quibusdam ullam ipsam 
-                            suscipit? Rem unde molestias ipsum facere magnam amet saepe dignissimos 
-                            vitae eum minus qui mollitia corrupti nesciunt ut reprehenderit voluptatum 
-                            doloribus velit maxime ratione, dolore aut hic.
-                        </p>
-                        <blockquote cite="https://www.brightnetwork.co.uk/">
-                            "Puppies." - <cite>Zsolt, 2024</cite>
-                        </blockquote>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquid fuga sed, 
-                            voluptate quod sapiente aliquam voluptatibus, fugit ab unde ipsa delectus, 
-                            eum optio reprehenderit odio? Nihil reprehenderit saepe provident voluptates 
-                            cupiditate! Error soluta ad illum, nam illo quasi veniam nobis! Ab assumenda 
-                            maiores necessitatibus consequuntur, saepe a praesentium numquam.
-                        </p>
-                                
-                    </main>
-                    <footer>
-                        <hgroup>
-                        <h2>Author: A. Dog Jr.</h2>
-                        <img src="https://placebear.com/100/100" alt="" srcset="">
-                        <h3>Last posted: 2024-08-01</h3>
-                        <a href="https://www.brightnetwork.co.uk/" target="_blank">https://www.brightnetwork.co.uk</a>
-                        </hgroup>
-                    </footer>
-                </article>
-                <article>
-                    <header>
-                         <!-- Articles header will go here -->
-                        <h2>Ten Facts about Dogs</h2>
-                        <h3>Read Time: 5 Minutes</h3>
-                    </header>
-                    <main>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Praesentium natus facilis dignissimos eligendi velit sunt nisi vel 
-                            dolores sed at aperiam, pariatur provident doloribus dolor perspiciatis 
-                            saepe totam nihil eum odit, tempora sapiente dolorum rerum. Dicta veniam 
-                            repudiandae dolore aspernatur animi quos rerum. Odio sunt magnam blanditiis 
-                            repudiandae architecto doloremque explicabo inventore earum sit, quibusdam, 
-                            voluptates, modi dicta perferendis illum? Laudantium est expedita sapiente 
-                            dolorem placeat, suscipit ducimus eligendi beatae. Quibusdam ullam ipsam 
-                            suscipit? Rem unde molestias ipsum facere magnam amet saepe dignissimos 
-                            vitae eum minus qui mollitia corrupti nesciunt ut reprehenderit voluptatum 
-                            doloribus velit maxime ratione, dolore aut hic.
-                        </p>
-                        <blockquote cite="https://www.brightnetwork.co.uk/">
-                            "Puppies." - <cite>Zsolt, 2024</cite>
-                        </blockquote>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquid fuga sed, 
-                            voluptate quod sapiente aliquam voluptatibus, fugit ab unde ipsa delectus, 
-                            eum optio reprehenderit odio? Nihil reprehenderit saepe provident voluptates 
-                            cupiditate! Error soluta ad illum, nam illo quasi veniam nobis! Ab assumenda 
-                            maiores necessitatibus consequuntur, saepe a praesentium numquam.
-                        </p>
-                                
-                    </main>
-                    <footer>
-                        <hgroup>
-                        <h2>Author: A. Dog Jr.</h2>
-                        <img src="https://placebear.com/100/100" alt="" srcset="">
-                        <h3>Last posted: 2024-08-01</h3>
-                        <a href="https://www.brightnetwork.co.uk/" target="_blank">https://www.brightnetwork.co.uk</a>
-                        </hgroup>
-                    </footer>
-                </article>
-            </div>    
-        </div>
-        
-
-        <h2>Sign up for more puppies!</h2>
-        <form action="" method="">
-            <label for="first_name">First Name:</label><br>
-            <input type="text" id="first_name" name="first_name" required><br><br>
-
-            <label for="last_name">Last Name:</label><br>
-            <input type="text" id="last_name" name="last_name" required><br><br>
-
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br><br>
-
-            <label for="favourite_animal">Favourite animal:</label><br>
-            <input type="radio" id="dog" name="favourite_animal" value="dog">
-            <label for="dog">Dog</label><br>
-
-            <input type="radio" id="cat" name="favourite_animal" value="cat">
-            <label for="cat">Cat</label><br>
-
-            <input type="radio" id="hedgehog" name="favourite_animal" value="hedgehog">
-            <label for="hedgehog"> Hedgehog </label><br><br>
-
-            <label for="country">Country:</label><br>
-            <select id="country" name="country">
-                <option value="england">England</option>
-                <option value="scotland">Scotland</option>
-                <option value="Wales">Wales</option>
-                <option value="northern_ireland">Northern Ireland</option>
-            </select><br><br>
-
-            <label for="bio">Biography:</label><br>
-            <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
-
-            <input type="checkbox" id="subscribe" name="subscribe">
-            <label for="subscribe">Subscribe to newsletter</label><br><br>
-
-            <input type="submit" value="Submit">
-        </form>
-
+    <main class="main-container">
+        <aside class="filter-buttons"><br>
+            <button onclick="filterProducts('all')">All</button>
+            <button onclick="filterProducts('electronics')">Electronics</button>
+            <button onclick="filterProducts('clothing')">Clothing</button>
+            <button onclick="filterProducts('appliances')">Appliances</button>
+        </aside>
+        <section class="products">
+            <div class="product" data-category="electronics" id="product1">
+                <img src="https://res.cloudinary.com/sharp-consumer-eu/image/fetch/w_1100,f_auto,q_auto/https://s3.infra.brandquad.io/accounts-media/SHRP/DAM/origin/b41a7fde-dcc1-11ec-9f1b-2e0c91dc8f24.jpg" alt="Product 1">
+                <h2>T.V</h2>
+                <p>£450.00</p>
+                <button class="add-to-basket" onclick="addToBasket('product1')">Add to Basket</button>
+            </div>
+            <div class="product" data-category="appliances" id="product2">
+                <img src="https://www.costco.co.uk/medias/sys_master/images/h54/hd4/169565456695326.jpg" alt="Product 2">
+                <h2>Fridge</h2>
+                <p>£200.00</p>
+                <button class="add-to-basket" onclick="addToBasket('product2')">Add to Basket</button>
+            </div>
+            <div class="product" data-category="appliances" id="product3">
+                <img src="https://puremate.co.uk/wp-content/uploads/2019/12/4.2L-Digital-Air-Fryer-with-Timer-and-1400W-Low-Fat-Oil-Free.webp" alt="Product 3">
+                <h2>AirFryer</h2>
+                <p>£30.00</p>
+                <button class="add-to-basket" onclick="addToBasket('product3')">Add to Basket</button>
+            </div>
+            <div class="product" data-category="clothing" id="product4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPDvPRmVRjuvl-W_zy782DRkTVv8NSxuatgg&s" alt="Product 4">
+                <h2>Trainers</h2>
+                <p>£30.00</p>
+                <button class="add-to-basket" onclick="addToBasket('product4')">Add to Basket</button>
+            </div>
+            <div class="product" data-category="clothing" id="product5">
+                <img src="https://th.bing.com/th/id/OIP.cvhw6NZSq2q4CKvp3QBI_gHaJ4?w=130&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Product 5">
+                <h2>Cap</h2>
+                <p>£30.00</p>
+                <button class="add-to-basket" onclick="addToBasket('product5')">Add to Basket</button>
+            </div>
+            <div class="product" data-category="clothing" id="product6">
+                <img src="https://th.bing.com/th/id/OIP.bD3dT2CazF4__z4TJVz8FQHaHR?w=187&h=183&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Product 6">
+                <h2>T-Shirt</h2>
+                <p>£30.00</p>
+                <button class="add-to-basket" onclick="addToBasket('product6')">Add to Basket</button>
+            </div>
+            <div class="product" data-category="clothing" id="product7">
+                <img src="https://th.bing.com/th/id/OIP.fTsnMVl2iJRotpTRFoDIHgAAAA?rs=1&pid=ImgDetMain" alt="Product 7">
+                <h2>Jeans</h2>
+                <p>£30.00</p>
+                <button class="add-to-basket" onclick="addToBasket('product7')">Add to Basket</button>
+            </div>
+            <div class="product" data-category="clothing" id="product8">
+                <img src="https://th.bing.com/th/id/OIP.h5BBLckNg2jsBmUyodPxJAHaJC?w=162&h=198&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Product 8">
+                <h2>Shorts</h2>
+                <p>£30.00</p>
+                <button class="add-to-basket" onclick="addToBasket('product8')">Add to Basket</button>
+            </div>
+        </section>
     </main>
     <footer>
-        <h2>BrightBlog Site</h2>
-        <section>
-            <nav>
-                <ul id="footer-ul">
-                    <div>
-                        <li><a href="/home">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </div>
-                    <div>
-                        <li><a href="/">Privacy Policy</a></li>
-                        <li><a href="/">Terms & Conditions</a></li>
-                        <li><a href="/">Cookie Policy</a></li>
-                    </div>
-                </ul>
-            </nav>        
-        </section>
+        <p>© 2024 My eCommerce Store</p>
     </footer>
 </body>
 </html>
