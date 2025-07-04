@@ -1,0 +1,84 @@
+/* src/components/Certifications.css */
+.certifications-section {
+  background-color: #1a1a1a; /* Slightly different dark background */
+  color: var(--color-text-light);
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid columns */
+  gap: 2.5rem; /* Space between certification cards */
+  padding: 2rem 0;
+  justify-content: center;
+}
+
+.certification-card {
+  background-color: var(--color-secondary); /* Darker background for cards */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid var(--color-primary); /* Accent border on the left */
+}
+
+.certification-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.certification-card h3 {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: 0.8rem;
+}
+
+.certification-meta {
+  font-size: 0.95rem;
+  color: var(--color-grey-dark);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.certification-description {
+  font-size: 1rem;
+  color: var(--color-grey-light);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex-grow: 1; /* Allows description to take available space */
+}
+
+.certification-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: auto; /* Pushes tags to the bottom */
+}
+
+/* Reusing the tech-tag style from Projects.css (or define here if preferred) */
+.certification-card .tech-tag {
+  background-color: var(--color-grey-dark);
+  color: var(--color-text-light);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .certifications-grid {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    gap: 2rem;
+  }
+  .certification-card {
+    padding: 1.5rem;
+  }
+  .certification-card h3 {
+    font-size: 1.3rem;
+  }
+  .certification-description {
+    font-size: 0.95rem;
+  }
+}

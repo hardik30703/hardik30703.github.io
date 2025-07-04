@@ -1,0 +1,155 @@
+/* src/components/About.css */
+.about-section {
+  background-color: var(--color-secondary); /* Consistent background */
+  color: var(--color-text-light);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--color-primary); /* Use primary color for section titles */
+  position: relative;
+  display: inline-block; /* To apply underline to the text, not full width */
+  padding-bottom: 0.5rem; /* Space for the underline */
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 80px; /* Underline width */
+  height: 4px;
+  background-color: var(--color-accent); /* Accent color for underline */
+  border-radius: 2px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+  gap: 3rem; /* Space between the profile and details columns */
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.about-profile,
+.about-details {
+  flex: 1; /* Allow items to grow */
+  min-width: 300px; /* Minimum width before wrapping */
+  max-width: 550px; /* Maximum width for content readability */
+}
+
+.about-profile .about-description {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: var(--color-grey-light);
+}
+
+.about-details h3 {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.5rem;
+  display: inline-block; /* To make border-bottom only under text */
+}
+
+.education-item,
+.experience-item {
+  margin-bottom: 1.5rem;
+  background-color: #1a1a1a; /* Slightly lighter dark for cards/items */
+  padding: 1.2rem;
+  border-radius: 8px;
+  border-left: 5px solid var(--color-accent);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover,
+.experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.education-item h4,
+.experience-item h4 {
+  font-size: 1.3rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.5rem;
+}
+
+.education-item p,
+.experience-item p {
+  color: var(--color-grey-light);
+  font-size: 0.95rem;
+}
+
+.strengths-list {
+  list-style: none; /* Remove default bullet points */
+  padding-left: 0;
+  display: grid; /* Use CSS Grid for a nice layout */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 1rem; /* Space between grid items */
+}
+
+.strengths-list li {
+  background-color: var(--color-primary); /* Primary color for strength tags */
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.strengths-list li:hover {
+  transform: scale(1.05);
+  background-color: #5a54e3; /* Slightly darker primary on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .about-content {
+    flex-direction: column; /* Stack columns on medium screens */
+    align-items: center; /* Center items when stacked */
+  }
+  .about-profile,
+  .about-details {
+    width: 100%; /* Take full width when stacked */
+    max-width: 700px; /* Limit max-width even when full width */
+  }
+  .about-profile {
+    text-align: center; /* Center text in profile when stacked */
+  }
+  .about-profile .about-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-details h3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .strengths-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .about-profile .about-description {
+    font-size: 1rem;
+  }
+  .about-details h3 {
+    font-size: 1.5rem;
+  }
+  .education-item h4,
+  .experience-item h4 {
+    font-size: 1.1rem;
+  }
+  .strengths-list {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+}
