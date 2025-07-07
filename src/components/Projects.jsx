@@ -9,14 +9,14 @@ function Projects() {
       title: 'Placement Management System (Java Spring Boot)',
       description: 'Engineered a comprehensive full-stack placement management system with Java Spring Boot and MySQL. This system was designed to streamline workflows for students and placement providers by enabling discrepancy flagging, real-time application tracking, and automating communications. It integrated a calendar and scheduling features for site visits and follow-ups, and used Leaflet.js for route guidance. The architecture was built to be scalable and secure, processing a high volume of applications and supporting diverse user roles.',
       technologies: ['Java', 'Spring Boot', 'MySQL', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Leaflet.js'],
-      githubLink: 'https://github.com/your-repo-link-1', // Placeholder: **REPLACE WITH ACTUAL GITHUB LINK**
+      githubLink: 'https://github.com/hardik30703/PlacementManagementTool-Java', // Placeholder: **REPLACE WITH ACTUAL GITHUB LINK**
     },
     {
       id: 2,
       title: 'E-Parking Solution',
       description: 'Developed a full-stack parking management platform using Java Spring Boot for robust backend services and MySQL for data storage. The front-end, built with HTML, CSS, and JavaScript (including Bootstrap and Leaflet.js), allows users to efficiently locate and reserve parking spaces with real-time availability and interactive map functionalities. It also integrated the Stripe API for secure payment processing and automated email confirmations, while providing distinct user portals for drivers, parking owners, and administrators.',
       technologies: ['Java', 'Spring Boot', 'MySQL', 'HTML', 'CSS', 'JavaScript', 'Leaflet.js', 'Stripe API', 'Bootstrap'],
-      githubLink: 'https://github.com/your-repo-link-2',
+      githubLink: 'https://github.com/hardik30703/E-ParkingSolution',
     },
     {
       id: 3,
@@ -37,7 +37,7 @@ function Projects() {
       title: 'Placement Management System (PHP)',
       description: 'Developed an earlier iteration of a placement management system using PHP for server-side scripting and MySQL for data persistence, alongside HTML, CSS, and JavaScript for the front-end. This digital system streamlined student placement forms, tracking, and scheduling, significantly reducing manual administrative workload. The project applied Agile development methodologies with frequent sprint-based releases, demonstrating foundational web development skills and an understanding of MVC architecture and basic web security principles.',
       technologies: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
-      githubLink: 'https://github.com/your-repo-link-5',
+      githubLink: 'https://github.com/hardik30703/Placement-Management-Tool',
     },
   ];
 
