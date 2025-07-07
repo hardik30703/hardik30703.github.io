@@ -30,7 +30,7 @@ function Projects() {
       title: 'Task Management System',
       description: 'Built a web-based productivity tool using HTML, CSS, JavaScript, jQuery, and Bootstrap to help users organize and prioritize daily tasks. Core functionalities included task creation, editing, deletion, and calendar-based organization, all designed to enhance productivity and workflow management. The focus was on a clean, intuitive user interface for task tracking and assignment, receiving positive feedback for its usability.',
       technologies: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap'],
-      githubLink: https://github.com/hardik30703/Task-Management-Tool',
+      githubLink: 'https://github.com/hardik30703/Task-Management-Tool',
     },
     {
       id: 5,
